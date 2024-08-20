@@ -26,7 +26,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: java-app
-          path: 'target/*.jar'  # Corrected path to reference JAR files
+          path: 'target/*.jar'
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,5 +48,6 @@ jobs:
         with:
           app-name: 'javatest'
           slot-name: 'Production'
-          package: 'target/*.jar'  # Deploy the JAR file
+          package: 'target/*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_246D292C1A9E432F8AF12C1F028E07EE }}
+          startup-command: 'java -jar target/demo.jar'
