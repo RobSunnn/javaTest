@@ -50,4 +50,4 @@ jobs:
           package: 'target/demo-3.3.2.jar' 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_246D292C1A9E432F8AF12C1F028E07EE }}
           deployment-method: 'zip'
-          startup-command: 'java -jar target/my-app-1.0.0.jar'
+          startup-command: 'java -jar target/demo-3.3.2.jar'
