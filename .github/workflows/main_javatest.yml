@@ -48,6 +48,5 @@ jobs:
         with:
           app-name: 'javatest'
           slot-name: 'Production'
-          package: 'target/*.jar'
+          package: 'target/demo-3.3.2.jar'  
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_246D292C1A9E432F8AF12C1F028E07EE }}
-          startup-command: 'java -jar target/demo.jar'
