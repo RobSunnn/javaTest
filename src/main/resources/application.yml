@@ -1,9 +1,9 @@
 spring:
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: "jdbc:mysql://java-test-server.mysql.database.azure.com:3306/java-test-database?serverTimezone=UTC&sslmode=required&user=yzlfvcpytg&password=a1YJHeDFG%24hP%24miK"
-    username: ${DB_USER:yzlfvcpytg}
-    password: ${DB_PASS:a1YJHeDFG%24hP%24miK}
+    url: "jdbc:mysql://java-test-server.mysql.database.azure.com:3306/java-test-database?serverTimezone=UTC&sslmode=required&user=vhcveonfqp&password=Cruzt%244VgISLy1se"
+    username: ${DB_USER:vhcveonfqp}
+    password: ${DB_PASS:Cruzt%244VgISLy1se}
   servlet:
     multipart:
       max-file-size: 5MB
