@@ -42,11 +42,11 @@ jobs:
           name: java-app
           path: target
 
-      - name: Deploy to Azure Web App
-        id: deploy-to-webapp
+      - name: Deploy to Azure Web App using ZipDeploy
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'javatest'
           slot-name: 'Production'
-          package: 'target/demo-3.3.2.jar'  
+          package: 'target/demo-3.3.2.jar' 
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_246D292C1A9E432F8AF12C1F028E07EE }}
+          deployment-method: 'zip'
